@@ -28,7 +28,7 @@ h1 {
   font-family: craw-modern-urw, serif;
   font-style: normal;
   font-weight: 400;
-  font-size: clamp(3rem, 2.1429rem + 3.8095vw, 5rem);
+  font-size: clamp(3rem, 2.6rem + 3.2vw, 4rem);
   color: #ffdf00;
   text-align: center;
   position: relative;
@@ -55,8 +55,8 @@ h3 {
   font-family: bebas-neue;
   font-style: normal;
   font-weight: 400;
-  font-size: 2rem;
-  font-size: clamp(0.5rem, 0.2857rem + 0.9524vw, 1rem);
+  font-size: clamp(0.6rem, 0.2667rem + 1.3333vw, 1.1rem);
+  color: #333333;
 }
 
 h4 {
@@ -80,15 +80,34 @@ a:hover {
   color: #604d3b;
 }
 
+li {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
 /* ------------header----------------- */
 
 header {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: right;
   align-items: center;
   min-height: 10vh;
   position: relative;
   z-index: 1;
+}
+
+header p a {
+  color: #604d3b;
+  grid-column: 1;
+  margin: 5px;
+}
+
+header p a:hover {
+  color: #ffdf00;
 }
 
 .menuknap {
@@ -101,6 +120,7 @@ header {
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   /* border: 3px solid gray; */
+  grid-column: 3;
 }
 
 .menuknap_burger {
@@ -171,6 +191,27 @@ header {
   font-size: 10px;
   margin-right: 1rem;
 }
+/* ------------Footer----------------- */
+footer ul {
+  justify-content: space-between;
+  text-decoration: none;
+  display: flex;
+  margin: 15px;
+  padding: 0;
+}
+footer li {
+  list-style-type: none;
+}
+
+footer li a {
+  list-style-type: none;
+  color: #604d3b;
+}
+
+footer li a:hover {
+  list-style-type: none;
+  color: #ffdf00;
+}
 
 /* ------------Forside----------------- */
 
@@ -229,6 +270,7 @@ header {
   position: relative;
   z-index: 2;
   text-align: center;
+  font-weight: 100;
 }
 
 .first_section img {
@@ -247,11 +289,6 @@ header {
 
 /* ------------anden----------------- */
 
-header p a {
-  margin-right: 80vw;
-  color: #604d3b;
-}
-
 .side {
   display: initial;
   width: 20vw;
@@ -264,10 +301,11 @@ header p a {
   font-family: craw-modern-urw, serif;
   font-style: normal;
   font-weight: 400;
-  font-size: clamp(6rem, 4rem + 8vw, 8rem);
+  font-size: clamp(5rem, 3.5rem + 8vw, 7rem);
   color: #ebe0c6;
   writing-mode: vertical-lr;
   transform: rotate(180deg);
+  padding: 0;
 }
 
 #indhold .first_section {
@@ -279,7 +317,7 @@ header p a {
 }
 
 #indhold .first_section h2 a {
-  font-size: clamp(0.6rem, -0.5rem + 4.4vw, 1.7rem);
+  font-size: clamp(1.1rem, -0.625rem + 6vw, 2rem);
   color: #ebe0c6;
 }
 
@@ -412,15 +450,24 @@ header p a {
   color: #f9de10;
 }
 
-#tema section img {
+/* #tema section img {
   margin-top: 8px;
   height: 40vh;
 }
+
+#tema .first_section img {
+  height: 100vh;
+  width: auto;
+} */
 
 /* ------------Media----------------- */
 
 @media (min-width: 700px) {
   /* første sektion */
+
+  #forside h1 {
+    font-size: 2.4rem;
+  }
 
   #forside {
     background-color: #d0ba9a;
@@ -445,7 +492,7 @@ header p a {
     font-family: craw-modern-urw, serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 2.5rem;
+    font-size: 1.9rem;
     color: #ebe0c6;
     text-align: left;
   }
@@ -477,24 +524,51 @@ header p a {
   #tema h2 {
     margin-top: 0;
   }
+  #tema .four_section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 30px;
+  }
 
   #tema .fourth_section {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    margin-top: 30px;
+  }
+
+  #tema .third_section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 30px;
   }
 
   #tema .fourth_section img {
     height: 70vh;
   }
+  #tema .fifth_section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  #tema .fifth_section img {
+    height: 30vh;
+    width: auto;
+  }
 }
 
 @media (min-width: 800px) {
+  #forside h1 {
+    font-size: clamp(2rem, -6rem + 16vw, 4rem);
+  }
+
   #forside .start {
     width: 25vw;
   }
 
   #forside .start h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   #forside .start h3 {
@@ -502,10 +576,6 @@ header p a {
   }
 
   /* anden sektion */
-
-  header p a {
-    margin-right: 90vw;
-  }
 
   .side {
     display: initial;
@@ -516,14 +586,8 @@ header p a {
   }
 
   .side h2 {
-    font-family: craw-modern-urw, serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: clamp(7rem, 1rem + 12vw, 10rem);
-    color: #ebe0c6;
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    margin-left: 6vw;
+    font-size: clamp(3rem, -1rem + 12.8vw, 7rem);
+    padding-right: 5vw;
   }
 
   #indhold .first_section {
@@ -536,12 +600,8 @@ header p a {
   }
 
   #indhold .first_section h2 a {
-    font-size: clamp(1.2rem, -0.1333rem + 2.6667vw, 2.2rem);
+    font-size: clamp(1.7rem, -0.3rem + 4vw, 2.2rem);
     color: #ebe0c6;
-  }
-
-  #indhold .first_section h2 a:hover {
-    color: #604d3b;
   }
 
   #indhold article {
@@ -629,6 +689,16 @@ header p a {
   #tema .fourth_section img {
     height: 60vh;
   }
+
+  .side h2 {
+    padding-right: 7vw;
+  }
+}
+
+@media (min-width: 1000px) {
+  #indhold .first_section h2 a {
+    font-size: clamp(2.2rem, -1.8rem + 6.4vw, 3rem);
+  }
 }
 
 @media (min-width: 1200px) {
@@ -640,5 +710,13 @@ header p a {
 
   #tema .fourth_section img {
     height: 50vh;
+  }
+  footer ul {
+    margin-left: 11vw;
+    margin-right: 11vw;
+  }
+
+  #indhold .first_section h2 a {
+    font-size: clamp(2.6rem, -2.8rem + 7.2vw, 3.5rem);
   }
 }
