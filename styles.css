@@ -19,6 +19,7 @@ video {
 
 .index > section {
   grid-column: 2 / 3;
+  margin-top: 40px;
 }
 
 /* ------------Skrift----------------- */
@@ -381,7 +382,7 @@ header p a {
   color: #d0ba9a;
 }
 
-#tema .second_section {
+#tema section {
   margin: 8px;
 }
 
@@ -394,11 +395,26 @@ header p a {
 #tema h3 {
   color: #604d3b;
   font-size: 1.5rem;
+  margin-top: 5px;
 }
 
 #tema p {
   color: #333333;
-  margin-bottom: 4vw;
+}
+
+#tema section a {
+  font-style: italic;
+  color: #333333;
+}
+
+#tema section a:hover {
+  font-style: italic;
+  color: #f9de10;
+}
+
+#tema section img {
+  margin-top: 8px;
+  height: 40vh;
 }
 
 /* ------------Media----------------- */
@@ -460,6 +476,15 @@ header p a {
 
   #tema h2 {
     margin-top: 0;
+  }
+
+  #tema .fourth_section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  #tema .fourth_section img {
+    height: 70vh;
   }
 }
 
@@ -590,6 +615,9 @@ header p a {
   #indhold figure:hover {
     opacity: 1;
   }
+  #tema .fourth_section img {
+    height: 60vh;
+  }
 }
 
 @media (min-width: 900px) {
@@ -598,6 +626,9 @@ header p a {
     grid-template-columns: 4fr;
     grid-template-rows: 2.8fr 0.5fr 0.5fr 1.4fr 1fr;
   }
+  #tema .fourth_section img {
+    height: 60vh;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -605,5 +636,9 @@ header p a {
     display: grid;
     grid-template-columns: 4fr;
     grid-template-rows: 2.6fr 0.5fr 0.5fr 1.4fr 1fr;
+  }
+
+  #tema .fourth_section img {
+    height: 50vh;
   }
 }
