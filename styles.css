@@ -409,8 +409,6 @@ footer li a:hover {
   z-index: -1;
   grid-column: 1 / 4;
   grid-row: 1 / 4;
-  object-fit: cover;
-  height: 70vh;
 }
 
 #tema .first_section h1 {
@@ -449,16 +447,6 @@ footer li a:hover {
   font-style: italic;
   color: #f9de10;
 }
-
-/* #tema section img {
-  margin-top: 8px;
-  height: 40vh;
-}
-
-#tema .first_section img {
-  height: 100vh;
-  width: auto;
-} */
 
 /* ------------Media----------------- */
 
@@ -556,6 +544,40 @@ footer li a:hover {
     height: 30vh;
     width: auto;
   }
+
+  /* #tema .hej {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 0.5fr 0.5fr 1fr;
+  }
+
+  #tema .hej video {
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+  }
+  #tema .hej h1 {
+    grid-column: 2 / 6;
+    grid-row: 2 / 3;
+    font-size: 7rem;
+  }
+  #tema .hej h2 {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    padding-top: 10vw;
+  }
+  #tema .hej h3 {
+    grid-column: 1 / 3;
+    grid-row: 4;
+    width: 10ch;
+  }
+  #tema .hej p {
+    grid-column: 2 / 4;
+    grid-row: 4 / 5;
+  }
+  #tema .hej img {
+    grid-column: 3 / 6;
+    grid-row: 3;
+  } */
 }
 
 @media (min-width: 800px) {
