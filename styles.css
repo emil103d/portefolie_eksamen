@@ -424,7 +424,7 @@ footer li a:hover {
 
 #tema h2 {
   color: #604d3b;
-  font-size: 2rem;
+  font-size: clamp(2rem, 1.5rem + 2vw, 3rem);
   margin-top: 4vw;
 }
 
@@ -446,6 +446,10 @@ footer li a:hover {
 #tema section a:hover {
   font-style: italic;
   color: #f9de10;
+}
+
+#tema .second_section h2 {
+  margin-top: 0;
 }
 
 /* ------------Media----------------- */
@@ -509,9 +513,6 @@ footer li a:hover {
     margin-top: 45px;
   }
 
-  #tema h2 {
-    margin-top: 0;
-  }
   #tema .four_section {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -543,6 +544,14 @@ footer li a:hover {
   #tema .fifth_section img {
     height: 30vh;
     width: auto;
+  }
+  /* ------------tema_03----------------- */
+  .tema_03_first_section p {
+    font-size: clamp(1rem, 0.85rem + 0.6vw, 1.3rem);
+  }
+
+  .tema_03_first_section h2 {
+    margin-top: 40px;
   }
 
   /* #tema .hej {
