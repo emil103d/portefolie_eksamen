@@ -191,6 +191,7 @@ header p a:hover {
   font-size: 10px;
   margin-right: 1rem;
 }
+
 /* ------------Footer----------------- */
 footer ul {
   justify-content: space-between;
@@ -286,6 +287,37 @@ footer li a:hover {
 }
 
 /* ------------about----------------- */
+
+/* ------------about----------------- */
+/* .splash_section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+}
+
+.splash_section img {
+  height: 100vh;
+  width: auto;
+}
+
+.splash_section img a {
+  z-index: -1;
+  grid-column: 1 / 4;
+  position: relative;
+}
+
+.splash_section h1 {
+  grid-column: 2 / 4;
+} */
+
+#splash {
+  background-color: violet;
+  background-image: url(img/tema_03/splash_billede.png);
+}
+
+#splash h1 {
+  top: 30vw;
+}
 
 /* ------------anden----------------- */
 
@@ -729,6 +761,64 @@ footer li a:hover {
 @media (min-width: 1000px) {
   #indhold .first_section h2 a {
     font-size: clamp(2.2rem, -1.8rem + 6.4vw, 3rem);
+  }
+  /* ------------Scrool Down----------------- */
+
+  .scrool_down {
+    grid-column: 2 / 3;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-80px) translateX(-50%) rotate(45deg);
+    margin-left: 12vw;
+    margin-top: 1vw;
+  }
+
+  .scrool_down span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #987759;
+    border-right: 2px solid #987759;
+    animation: scrool 1.2s linear infinite;
+    opacity: 0;
+  }
+
+  .scrool_down span:nth-child(1) {
+    transform: translate(-10px, -10px);
+    animation-delay: -0.4s;
+  }
+
+  .scrool_down span:nth-child(2) {
+    transform: translate(0, 0);
+    animation-delay: -0.2s;
+  }
+
+  .scrool_down span:nth-child(3) {
+    transform: translate(10px, 10px);
+    animation-delay: 0s;
+  }
+
+  @keyframes scrool {
+    0% {
+      top: -5px;
+      left: -5px;
+      opacity: 0;
+    }
+
+    25% {
+      top: 0px;
+      left: 0px;
+      opacity: 1;
+    }
+    50%,
+    100% {
+      top: 5px;
+      left: 5px;
+      opacity: 0;
+    }
   }
 }
 
