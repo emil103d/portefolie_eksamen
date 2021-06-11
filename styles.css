@@ -289,34 +289,13 @@ footer li a:hover {
 /* ------------about----------------- */
 
 /* ------------about----------------- */
-/* .splash_section {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 1fr;
-}
-
-.splash_section img {
-  height: 100vh;
-  width: auto;
-}
-
-.splash_section img a {
-  z-index: -1;
-  grid-column: 1 / 4;
-  position: relative;
-}
-
-.splash_section h1 {
-  grid-column: 2 / 4;
-} */
-
-#splash {
-  background-color: violet;
-  background-image: url(img/tema_03/splash_billede.png);
-}
 
 #splash h1 {
   top: 30vw;
+  color: #d0ba9a;
+}
+#splash h1:hover {
+  color: #ffdf00;
 }
 
 /* ------------anden----------------- */
@@ -457,7 +436,7 @@ footer li a:hover {
 #tema h2 {
   color: #604d3b;
   font-size: clamp(2rem, 1.5rem + 2vw, 3rem);
-  margin-top: 4vw;
+  margin-top: 3vw;
 }
 
 #tema h3 {
@@ -586,6 +565,16 @@ footer li a:hover {
     margin-top: 40px;
   }
 
+  .billede_2grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding-top: 2vw;
+  }
+
+  .process img {
+    margin-top: 2vw;
+  }
   /* #tema .hej {
     display: grid;
     grid-template-columns: repeat(5, 1fr);

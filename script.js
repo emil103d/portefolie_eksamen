@@ -1,5 +1,7 @@
 const menuKnap = document.querySelector(".menuknap");
 let menuOpen = false;
+const scrooled = document.querySelector(".scrool_down");
+let scrool = false;
 
 window.addEventListener("load", sidenVises);
 
@@ -18,3 +20,8 @@ menuKnap.addEventListener("click", () => {
     document.querySelector("#menu").classList.add("hidden");
   }
 });
+
+// scrooled.addEventListener("click", () => {
+//   console.log("scrolled");
+//   window.scrollBy(0, 100);
+// });
