@@ -445,6 +445,7 @@ footer li a:hover {
 
 #tema h3 {
   color: #604d3b;
+  color: #ccba9e;
   font-size: 1.5rem;
   margin-top: 5px;
 }
@@ -519,6 +520,7 @@ footer li a:hover {
 
   #tema .first_section h1 {
     font-size: 7rem;
+    text-shadow: -1px 0 #987759, 0 1px #987759, 1px 0 #987759, 0 -1px #987759;
   }
   #tema .second_section {
     display: grid;
@@ -527,6 +529,11 @@ footer li a:hover {
     margin: 10px;
     margin-top: 45px;
   }
+  /* #tema .second_section img {
+    border: 2px;
+    border-style: solid;
+    border-color: #DA98B3;
+  } */
 
   #tema .four_section {
     display: grid;
@@ -567,7 +574,7 @@ footer li a:hover {
   }
 
   .tema_03_first_section h2 {
-    margin-top: 40px;
+    margin-top: 20px;
   }
 
   .billede_2grid {
@@ -580,39 +587,6 @@ footer li a:hover {
   .process img {
     margin-top: 2vw;
   }
-  /* #tema .hej {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr 0.5fr 0.5fr 1fr;
-  }
-
-  #tema .hej video {
-    grid-column: 1 / 4;
-    grid-row: 1 / 3;
-  }
-  #tema .hej h1 {
-    grid-column: 2 / 6;
-    grid-row: 2 / 3;
-    font-size: 7rem;
-  }
-  #tema .hej h2 {
-    grid-column: 1 / 3;
-    grid-row: 3 / 4;
-    padding-top: 10vw;
-  }
-  #tema .hej h3 {
-    grid-column: 1 / 3;
-    grid-row: 4;
-    width: 10ch;
-  }
-  #tema .hej p {
-    grid-column: 2 / 4;
-    grid-row: 4 / 5;
-  }
-  #tema .hej img {
-    grid-column: 3 / 6;
-    grid-row: 3;
-  } */
 }
 
 @media (min-width: 800px) {
@@ -774,8 +748,10 @@ footer li a:hover {
     display: block;
     width: 100%;
     height: 100%;
-    border-bottom: 2px solid #987759;
-    border-right: 2px solid #987759;
+    border-bottom: 3px solid #987759;
+    border-right: 3px solid #987759;
+    border-bottom: 3px solid #fadf4b;
+    border-right: 3px solid #fadf4b;
     animation: scrool 1.2s linear infinite;
     opacity: 0;
   }
