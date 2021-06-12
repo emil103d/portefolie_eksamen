@@ -410,6 +410,11 @@ footer li a:hover {
 
 /* ------------tema_02----------------- */
 
+#tema {
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
 #tema .first_section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -436,7 +441,6 @@ footer li a:hover {
 #tema h2 {
   color: #604d3b;
   font-size: clamp(2rem, 1.5rem + 2vw, 3rem);
-  margin-top: 3vw;
 }
 
 #tema h3 {
@@ -543,7 +547,7 @@ footer li a:hover {
   }
 
   #tema .fourth_section img {
-    height: 70vh;
+    height: 60vh;
   }
   #tema .fifth_section {
     display: grid;
@@ -555,6 +559,7 @@ footer li a:hover {
   #tema .fifth_section img {
     height: 30vh;
     width: auto;
+    margin-top: 3vw;
   }
   /* ------------tema_03----------------- */
   .tema_03_first_section p {
@@ -728,7 +733,7 @@ footer li a:hover {
     opacity: 1;
   }
   #tema .fourth_section img {
-    height: 60vh;
+    height: 70vh;
   }
 }
 
