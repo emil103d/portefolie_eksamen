@@ -1,7 +1,6 @@
 const menuKnap = document.querySelector(".menuknap");
 let menuOpen = false;
-const scrooled = document.querySelector(".scrool_down");
-let scrool = false;
+const ScrollToTop = document.querySelector("#btnScrollToTop");
 
 window.addEventListener("load", sidenVises);
 
@@ -21,7 +20,11 @@ menuKnap.addEventListener("click", () => {
   }
 });
 
-// scrooled.addEventListener("click", () => {
-//   console.log("scrolled");
-//   window.scrollBy(0, 100);
-// });
+ScrollToTop.addEventListener("click", () => {
+  // window.scrollTo(0, 0);
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+});
